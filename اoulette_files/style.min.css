@@ -163,7 +163,7 @@ video {
 html {
   background: #1a0106;
   font-size: 0.83333333vw;
-  font-family: Myriad;
+
   font-weight: 400;
 }
 body,
@@ -227,27 +227,12 @@ body {
   font-family: "Montserrat Black";
   src: url("./fonts/Montserrat/Montserrat-Black.ttf") format("ttf");
 }
-@font-face {
-  font-family: Myriad;
-  src: url("./fonts/Myriad-Arabic-Regular.ttf") format("ttf");
-  /* url(./fonts/Myriad-Arabic-Regular.woff) format("woff"); */
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Druk Cyr;
-  src: url("./fonts/DrukCyr-Medium.woff2") format("woff2"),
-    url("./fonts/DrukCyr-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+
 .body-wrap {
   scroll-behavior: smooth;
   min-height: 100%;
   /* background: url(./background-m.png) no-repeat; */
-  background: url(./backbig.png) no-repeat;
+  /* background: url(./backbig.png) no-repeat; */
   -moz-background-size: 100%;
   background-size: 100%;
   background-position: 0 0;
@@ -302,7 +287,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: url("img/backg-3.webp");
+  /* background-image: url("img/backg-3.webp"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -356,6 +341,10 @@ body {
   width: 72px;
   object-fit: contain;
   object-position: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 4em;
+  margin-right: 4em;
 }
 .bottom .testimonials .top img:not(:first-of-type) {
   margin-inline-start: -50px;
@@ -363,7 +352,8 @@ body {
 }
 .bottom .testimonials .text-info {
   color: #fff;
-  font-family: "Tajawal", sans-serif;
+  /* font-family: "Tajawal", sans-serif; */
+  font-family: "Noto Sans";
   font-weight: 400;
   display: flex;
 }
@@ -377,8 +367,11 @@ body {
   padding-block-start: 30px;
 }
 .bottom .testimonials .testimonial img {
-  height: 88px;
-  width: 88px;
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 20px 20px 20px 0;
 }
 .bottom .testimonials .testimonial .test-content {
   padding-block-start: 15px;
@@ -398,7 +391,8 @@ body {
 }
 .bottom .testimonials .testimonial .test-content p {
   /* font-family: Montserrat, sans-serif; */
-  font-family: "Tajawal";
+  /* font-family: "Tajawal"; */
+  font-family: "Noto Sans";
   font-size: 18px;
   font-weight: 400;
   color: #fff;
@@ -419,7 +413,7 @@ body {
 .bottom .testimonials .testimonial .test-content .test-actions span {
   display: inline-flex;
   align-items: center;
-  padding-inline-end: 24px;
+  padding-inline-end: 10px;
 }
 .bottom .testimonials span {
   cursor: pointer;
@@ -452,6 +446,34 @@ body {
   font-family: "Noto Sans";
   line-height: 150%;
 }
+
+/* #lang_reward {
+  font-family: "Tajawal";
+}
+#lang_withdraw {
+  font-family: "Tajawal";
+}
+#lang_fastest {
+  font-family: "Tajawal";
+}
+#lang_safest {
+  font-family: "Tajawal";
+}
+#lang_simple {
+  font-family: "Tajawal";
+}
+#lang_secure {
+  font-family: "Tajawal";
+}
+#lang_registration {
+  font-family: "Tajawal";
+}
+#lang_upto {
+  font-family: "Tajawal";
+}
+#lang_welcome {
+  font-family: "Tajawal";
+} */
 .step h5 {
   font-size: 20px;
   font-weight: 300;
@@ -464,9 +486,10 @@ body {
   margin-top: 10%;
 }
 .registration_invite {
-  display: none;
+  /* display: none; */
   flex-direction: column;
-  margin-top: 20em;
+  /* margin-top: -5em; */
+  margin-top: 0em;
   margin-right: 20em;
 }
 .button_handler {
@@ -550,19 +573,20 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 5em auto;
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
   -webkit-box-align: end;
   -moz-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  margin-top: 4.375em;
+  /* margin-top: 4.375em; */
   width: 35.625em;
   margin-left: auto;
-  margin-right: 8.75em;
-  z-index: 2;
+  /* margin-right: 8.75em; */
+  z-index: 100;
 }
 .header__logo_1 {
   position: relative;
@@ -631,6 +655,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-size: 2.4rem;
+    margin: 2em auto;
   }
 }
 .main,
@@ -659,8 +684,15 @@ body {
 .main__section-1 {
   z-index: 2;
 }
+#main_girl {
+  max-width: 90%;
+}
 .main__bonus_block {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+  /* display: none !important; */
+  top: 0;
+  right: 0%;
   width: 43.75em;
   display: -webkit-box;
   display: -moz-box;
@@ -681,10 +713,15 @@ body {
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: auto;
-  margin-right: 8.75em;
+  margin-right: 0.75em;
   /* margin-top: 3.75em; */
   margin-top: 10.75em;
   z-index: 2;
+}
+.bags {
+  margin-top: 1em;
+  max-width: 60% !important;
+  margin-left: 5em;
 }
 .main__text_1 {
   position: relative;
@@ -748,7 +785,7 @@ body {
   padding-top: 0.625em;
   -webkit-filter: drop-shadow(0 0.9375em 1.25em #ffd560);
   filter: drop-shadow(0 0.9375em 1.25em #ffd560);
-  margin-top: 4.375em;
+  margin-top: 1.375em;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -846,7 +883,7 @@ body {
 }
 .main__bg_item_2 {
   position: absolute;
-  left: 46em;
+  left: 25em;
   width: 27.375em;
   z-index: 2;
   top: -8.75em;
@@ -1277,6 +1314,9 @@ body {
 @media (max-width: 1024px) and (orientation: portrait) {
   .bottom .testimonials .text-info {
     font-size: 18px;
+  }
+  #main_girl {
+    max-width: 100%;
   }
   .bottom {
     padding: 100px 10px;
